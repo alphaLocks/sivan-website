@@ -1,0 +1,278 @@
+:root {
+    /* צבעי המותג לפי הלוגו */
+    --primary-blue: #162046; /* כחול צי עמוק */
+    --secondary-blue: #2c3e80; /* כחול מעט בהיר יותר להדגשות */
+    --text-color: #333333;
+    --light-bg: #f4f7f6;
+    --white: #ffffff;
+    --gold-accent: #c5a059; /* נגיעת זהב שמשתלבת יפה עם כחול יוקרתי */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--light-bg);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--white);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-logo {
+    height: 60px; /* התאמה לגודל הלוגו */
+    object-fit: contain;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--primary-blue);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.nav-btn {
+    background-color: var(--primary-blue);
+    color: var(--white) !important;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: background 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: var(--secondary-blue);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(22, 32, 70, 0.9), rgba(22, 32, 70, 0.8)), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.cta-button {
+    background-color: var(--white);
+    color: var(--primary-blue);
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+    background-color: #e6e6e6;
+}
+
+/* Sections General */
+.section {
+    padding: 5rem 10%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--primary-blue);
+    margin-bottom: 3rem;
+}
+
+/* Services Cards */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+    border-top: 5px solid var(--primary-blue);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-icon {
+    font-size: 3rem;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+    color: var(--primary-blue);
+}
+
+/* About Section */
+.about-section {
+    background-color: var(--white);
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 20px 20px 0px var(--primary-blue);
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    text-align: center;
+}
+
+.contact-box {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-section h2 {
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Heebo', sans-serif;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--gold-accent); /* שימוש בצבע מנוגד להנעה לפעולה */
+    color: var(--white);
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #b08d4b;
+}
+
+.direct-contact a {
+    color: var(--gold-accent);
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: #0f1630;
+    color: rgba(255,255,255,0.6);
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Whatsapp Float */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    background-color: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    z-index: 100;
+    transition: transform 0.3s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* אפשר להוסיף תפריט המבורגר בהמשך */
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .about-container {
+        flex-direction: column-reverse;
+    }
+}
