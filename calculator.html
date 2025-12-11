@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחשבון משכנתא | סיון שמחי - יועצת משכנתאות</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="סיון שמחי יועצת משכנתאות" class="nav-logo">
+            </a>
+        </div>
+        <button class="nav-toggle" aria-label="פתיחת תפריט">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html#about">קצת עליי</a></li>
+            <li><a href="index.html#services">איך אני עוזרת</a></li>
+            <li><a href="#top" class="active">מחשבון משכנתא</a></li>
+            <li><a href="index.html#contact" class="nav-btn">דברו איתי</a></li>
+        </ul>
+    </nav>
+
+    <section class="calculator-hero" id="top">
+        <div class="container">
+            <h1><i class="fas fa-calculator"></i> מחשבון משכנתא חכם</h1>
+            <p>מכניסים מסלולים, ריבית, שנים ומדד ורואים איך זה מתרגם להחזר חודשי ולהחזרים מצטברים. הכל להמחשה בלבד – לתכנון שמותאם לכם בואו נדבר.</p>
+        </div>
+    </section>
+
+    <section class="calculator-intro section">
+        <div class="intro-box container">
+            <h2>לפני שמתחילים לחשב</h2>
+            <p>הקישו את המסלולים שאתם שוקלים, הוסיפו או הסירו לפי הצורך ולחצו על חישוב. התוצאה הראשונית תעזור להבין מגמות וכדאיות.</p>
+            <div class="intro-features">
+                <div class="intro-feature">
+                    <i class="fas fa-puzzle-piece"></i>
+                    <h4>מסלולים מותאמים</h4>
+                    <p>הוספת מסלולים חדשים או מחיקה בלחיצה אחת – קל״צ, פריים, משתנה וכל מה שביניהם.</p>
+                </div>
+                <div class="intro-feature">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>ראייה קדימה</h4>
+                    <p>חישוב החזר ראשון ומקסימלי יחד עם סך הריביות שצפויות לאורך חיי ההלוואה.</p>
+                </div>
+                <div class="intro-feature">
+                    <i class="fas fa-hand-holding-dollar"></i>
+                    <h4>שקיפות מלאה</h4>
+                    <p>כל הנתונים מול העיניים כדי שתבינו איך כל החלטה משפיעה על הכיס.</p>
+                </div>
+            </div>
+            <p class="intro-disclaimer"><strong>לתשומת לבכם:</strong> המחשבון הוא כלי להמחשה בלבד ואינו מהווה ייעוץ. לשיחה אישית והתאמת תמהיל <a href="index.html#contact">תיאמו פגישה</a>.</p>
+        </div>
+    </section>
+
+    <section class="calculator-section section">
+        <div class="calculator-container container">
+            <h2 class="section-title"><i class="fas fa-coins"></i> מסלולי המשכנתא שלכם</h2>
+            
+            <div class="calculator-wrapper">
+                <table class="tracks-table" id="mortgageTable">
+                    <thead>
+                        <tr>
+                            <th>שם מסלול</th>
+                            <th>סכום (₪)</th>
+                            <th>ריבית שנתית (%)</th>
+                            <th>משך (שנים)</th>
+                            <th>מדד שנתי (%)</th>
+                            <th>סוג החזר</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="track-row">
+                            <td><input type="text" value="קל״צ" placeholder="שם המסלול"></td>
+                            <td><input type="number" class="amount" value="500000" min="0"></td>
+                            <td><input type="number" class="interest" value="5.5" step="0.1" min="0"></td>
+                            <td><input type="number" class="years" value="25" min="1" max="30"></td>
+                            <td><input type="number" class="madad" value="0" step="0.1" disabled title="קל״צ אינה צמודה למדד"></td>
+                            <td>
+                                <select class="type">
+                                    <option value="shpitzer">שפיצר</option>
+                                    <option value="keren">קרן שווה</option>
+                                </select>
+                            </td>
+                            <td><button class="btn-remove" onclick="removeRow(this)" title="מחיקת מסלול"><i class="fas fa-trash"></i></button></td>
+                        </tr>
+                        <tr class="track-row">
+                            <td><input type="text" value="פריים" placeholder="שם המסלול"></td>
+                            <td><input type="number" class="amount" value="300000" min="0"></td>
+                            <td><input type="number" class="interest" value="5.2" step="0.1" min="0"></td>
+                            <td><input type="number" class="years" value="20" min="1" max="30"></td>
+                            <td><input type="number" class="madad" value="0" step="0.1"></td>
+                            <td>
+                                <select class="type">
+                                    <option value="shpitzer">שפיצר</option>
+                                    <option value="keren">קרן שווה</option>
+                                </select>
+                            </td>
+                            <td><button class="btn-remove" onclick="removeRow(this)" title="מחיקת מסלול"><i class="fas fa-trash"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="calculator-actions">
+                    <button class="btn-add" onclick="addTrack()">
+                        <i class="fas fa-plus"></i> הוספת מסלול
+                    </button>
+                    <button class="btn-calc" onclick="calculateAll()">
+                        <i class="fas fa-calculator"></i> חשבו הכל
+                    </button>
+                </div>
+            </div>
+
+            <div id="results-area">
+                <h3><i class="fas fa-chart-pie"></i> סיכום ראשוני</h3>
+                <div class="summary-grid">
+                    <div class="summary-item">
+                        <i class="fas fa-calendar-check"></i>
+                        <h4>החזר חודשי ראשון</h4>
+                        <div class="value" id="first-payment">₪0</div>
+                    </div>
+                    <div class="summary-item">
+                        <i class="fas fa-arrow-up"></i>
+                        <h4>החזר חודשי מקסימלי</h4>
+                        <div class="value" id="max-payment">₪0</div>
+                    </div>
+                    <div class="summary-item">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <h4>סך כל התשלומים</h4>
+                        <div class="value" id="total-payment">₪0</div>
+                    </div>
+                    <div class="summary-item highlight">
+                        <i class="fas fa-percentage"></i>
+                        <h4>סך הריבית ששולמה</h4>
+                        <div class="value" id="total-interest">₪0</div>
+                    </div>
+                </div>
+                
+                <div class="results-cta">
+                    <p>רוצים לדעת מה באמת מתאים לכם ולחסוך כסף? השאירו פרטים ואבנה לכם תמהיל מדויק.</p>
+                    <a href="index.html#contact" class="cta-button">לקביעת שיחה</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="calculator-info section">
+        <h2 class="section-title">טיפים לשימוש נכון</h2>
+        <div class="info-grid container">
+            <div class="info-card">
+                <h3><i class="fas fa-book"></i> להבין את המסלולים</h3>
+                <p>שפיצר מאפשר החזר חודשי יציב יותר, קרן שווה מורידה את התשלום בהדרגה. בכל מקרה, חשוב להצמיד רק כשזה הגיוני.</p>
+            </div>
+            <div class="info-card">
+                <h3><i class="fas fa-balance-scale"></i> חלוקת סיכון</h3>
+                <p>פזרו את ההלוואה בין מסלולים כדי לאזן בין ריבית נמוכה לסיכון עתידי. כך ניתן לשמור על יציבות גם כשהריבית במשק משתנה.</p>
+            </div>
+            <div class="info-card">
+                <h3><i class="fas fa-chart-area"></i> מסתכלים לטווח ארוך</h3>
+                <p>בדקו לא רק את ההחזר החודשי אלא גם את סך הריבית שתשלמו לאורך השנים. לפעמים ריבית מעט גבוהה יותר אבל בלי מדד היא עדיפה.</p>
+            </div>
+            <div class="info-card">
+                <h3><i class="fas fa-layer-group"></i> צעד אחר צעד</h3>
+                <p>התחילו בשני מסלולים מרכזיים, בדקו את הנתונים ואז הוסיפו מסלולים נוספים אם צריך. ככה יהיה קל להבין את ההשפעה.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="calculator-cta section">
+        <div class="cta-box container">
+            <h2>רוצים לוודא שהמספרים עובדים לטובתכם?</h2>
+            <p>אעבור על הנתונים, אבדוק אפשרויות בבנקים המתאימים ואחזור אליכם עם המלצות ותמהיל מסודר.</p>
+            <div class="cta-buttons">
+                <a href="https://wa.me/972524540323" class="cta-button whatsapp-cta" target="_blank">
+                    <i class="fab fa-whatsapp"></i> הודעה בווטסאפ
+                </a>
+                <a href="index.html#contact" class="cta-button secondary">
+                    <i class="fas fa-envelope"></i> להשארת פרטים
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 סיון שמחי - יועצת משכנתאות. כל הזכויות שמורות.</p>
+    </footer>
+
+    <a href="https://wa.me/972524540323" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+<script>
+    function addTrack() {
+        const tbody = document.querySelector('#mortgageTable tbody');
+        const row = document.createElement('tr');
+        row.className = 'track-row';
+        row.innerHTML = `
+            <td><input type="text" placeholder="שם המסלול"></td>
+            <td><input type="number" class="amount" placeholder="סכום" min="0"></td>
+            <td><input type="number" class="interest" placeholder="ריבית" step="0.1" min="0"></td>
+            <td><input type="number" class="years" placeholder="שנים" min="1" max="30"></td>
+            <td><input type="number" class="madad" value="0" step="0.1"></td>
+            <td>
+                <select class="type">
+                    <option value="shpitzer">שפיצר</option>
+                    <option value="keren">קרן שווה</option>
+                </select>
+            </td>
+            <td><button class="btn-remove" onclick="removeRow(this)" title="מחיקת מסלול"><i class="fas fa-trash"></i></button></td>
+        `;
+        tbody.appendChild(row);
+    }
+
+    function removeRow(btn) {
+        const rows = document.querySelectorAll('.track-row');
+        if (rows.length > 1) {
+            btn.closest('tr').remove();
+        } else {
+            alert('הכניסו לפחות מסלול אחד כדי לחשב.');
+        }
+    }
+
+    function calculateAll() {
+        let totalFirstPayment = 0;
+        let totalMaxPayment = 0;
+        let totalPaidOverall = 0;
+        let totalLoanAmount = 0;
+
+        const rows = document.querySelectorAll('.track-row');
+        let hasValidTrack = false;
+
+        rows.forEach(row => {
+            const amount = parseFloat(row.querySelector('.amount').value) || 0;
+            const interest = parseFloat(row.querySelector('.interest').value) || 0;
+            const years = parseFloat(row.querySelector('.years').value) || 0;
+            const madad = parseFloat(row.querySelector('.madad').value) || 0;
+            const type = row.querySelector('.type').value;
+
+            if (amount > 0 && years > 0) {
+                hasValidTrack = true;
+                const result = calculateSingleTrack(amount, interest, years, madad, type);
+                
+                totalFirstPayment += result.firstPayment;
+                totalMaxPayment += result.maxPayment;
+                totalPaidOverall += result.totalPaid;
+                totalLoanAmount += amount;
+            }
+        });
+
+        if (!hasValidTrack) {
+            alert('הוסיפו לפחות מסלול אחד עם סכום ושנים כדי לחשב.');
+            return;
+        }
+
+        document.getElementById('first-payment').innerText = formatMoney(totalFirstPayment);
+        document.getElementById('max-payment').innerText = formatMoney(totalMaxPayment);
+        document.getElementById('total-payment').innerText = formatMoney(totalPaidOverall);
+        document.getElementById('total-interest').innerText = formatMoney(totalPaidOverall - totalLoanAmount);
+        
+        document.getElementById('results-area').style.display = 'block';
+        document.getElementById('results-area').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function calculateSingleTrack(principal, yearlyInterest, years, yearlyMadad, type) {
+        let months = years * 12;
+        let currentPrincipal = principal;
+        let totalPaid = 0;
+        let firstPayment = 0;
+        let maxPayment = 0;
+
+        let monthlyInterestRate = (yearlyInterest / 100) / 12;
+        let monthlyMadadRate = (yearlyMadad / 100) / 12;
+
+        let originalPrincipalPayment = principal / months;
+
+        for (let i = 1; i <= months; i++) {
+            currentPrincipal = currentPrincipal * (1 + monthlyMadadRate);
+
+            let monthlyPayment = 0;
+            let interestPayment = currentPrincipal * monthlyInterestRate;
+
+            if (type === 'shpitzer') {
+                let remainingMonths = months - (i - 1);
+                if (monthlyInterestRate > 0) {
+                    let mathPow = Math.pow(1 + monthlyInterestRate, remainingMonths);
+                    monthlyPayment = (currentPrincipal * monthlyInterestRate * mathPow) / (mathPow - 1);
+                } else {
+                    monthlyPayment = currentPrincipal / remainingMonths;
+                }
+            } else {
+                let principalPart = originalPrincipalPayment * (1 + monthlyMadadRate * i);
+                monthlyPayment = principalPart + interestPayment;
+            }
+
+            if (i === 1) firstPayment = monthlyPayment;
+            if (monthlyPayment > maxPayment) maxPayment = monthlyPayment;
+
+            let principalPaid = monthlyPayment - interestPayment;
+            currentPrincipal -= principalPaid;
+            
+            if (currentPrincipal < 0) currentPrincipal = 0;
+
+            totalPaid += monthlyPayment;
+        }
+
+        return { firstPayment, maxPayment, totalPaid };
+    }
+
+    function formatMoney(num) {
+        return "₪" + Math.round(num).toLocaleString('he-IL');
+    }
+
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (navToggle && navLinks) {
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            navToggle.classList.toggle('open');
+            navToggle.setAttribute('aria-expanded', navToggle.classList.contains('open'));
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+                navToggle.classList.remove('open');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+    }
+</script>
+
+</body>
+</html>

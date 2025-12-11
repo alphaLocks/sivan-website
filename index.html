@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>סיון סיונוב | יועצת משכנתאות</title>
+    <title>סיון שמחי | יועצת משכנתאות שמפשטת את המסלול</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap" rel="stylesheet">
@@ -13,88 +13,246 @@
 
     <nav class="navbar">
         <div class="logo-container">
-            <img src="images/logo.jpg" alt="סיון סיונוב יועצת משכנתאות" class="nav-logo">
+            <img src="images/logo.svg" alt="סיון שמחי יועצת משכנתאות" class="nav-logo">
         </div>
+        <button class="nav-toggle" aria-label="פתיחת תפריט">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <ul class="nav-links">
-            <li><a href="#about">אודות</a></li>
-            <li><a href="#services">שירותים</a></li>
-            <li><a href="#testimonials">המלצות</a></li>
-            <li><a href="#contact" class="nav-btn">צור קשר</a></li>
+            <li><a href="#about">קצת עליי</a></li>
+            <li><a href="#services">איך אני עוזרת</a></li>
+            <li><a href="#process">תהליך הליווי</a></li>
+            <li><a href="calculator.html">מחשבון משכנתא</a></li>
+            <li><a href="#contact" class="nav-btn">דברו איתי</a></li>
         </ul>
     </nav>
 
     <header class="hero">
-        <div class="hero-content">
-            <h1>הדרך לבית משלכם מתחילה במשכנתא חכמה</h1>
-            <p class="subtitle">סיון סיונוב - ליווי אישי ומקצועי לחסכון של עשרות אלפי שקלים.</p>
-            <a href="#contact" class="cta-button">לשיחת ייעוץ ללא עלות</a>
+        <div class="hero-shell container">
+            <div class="hero-content">
+                <span class="eyebrow">ליווי אישי מקצה לקצה</span>
+                <h1>משכנתא חכמה מתחילה בתכנון אישי</h1>
+                <p class="subtitle">אני סיון שמחי, יועצת משכנתאות שמתרגמת מספרים להחלטות פשוטות. יחד נבנה מסלול שמתאים לבית, לקצב החיים ולשקט הנפשי שלכם.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="cta-button">שיחת היכרות ללא עלות</a>
+                    <a href="calculator.html" class="cta-button secondary">מעבר למחשבון</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-people-group"></i>
+                        <p class="stat-label">משפחות שליוויתי</p>
+                        <p class="stat-value">120+</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-handshake-angle"></i>
+                        <p class="stat-label">אישור עקרוני ממוצע</p>
+                        <p class="stat-value">8 ימי עסקים</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-star"></i>
+                        <p class="stat-label">ציון המלצות</p>
+                        <p class="stat-value">4.9</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-card">
+                <div class="mini-card">
+                    <p class="mini-title">איך נראה הליווי איתי?</p>
+                    <ul class="hero-list">
+                        <li><i class="fas fa-check"></i> פגישה ממוקדת אונליין או פרונטלית</li>
+                        <li><i class="fas fa-check"></i> תכנון תמהיל שמותאם ליכולת ההחזר</li>
+                        <li><i class="fas fa-check"></i> ניהול מו״מ מול הבנקים עד החתימה</li>
+                    </ul>
+                    <a href="#contact" class="inline-link">קובעים שיחה ›</a>
+                </div>
+            </div>
         </div>
     </header>
 
     <section id="services" class="section">
-        <h2 class="section-title">איך אני יכולה לעזור לכם?</h2>
-        <div class="cards-grid">
+        <div class="section-heading container">
+            <span class="eyebrow">מה נעשה ביחד</span>
+            <h2 class="section-title">מסלול משכנתא שנבנה סביבכם</h2>
+            <p class="section-lead">שירות אישי, שקוף ומדויק שמפנה לכם זמן ואנרגיה להתעסק בדברים החשובים באמת.</p>
+        </div>
+        <div class="cards-grid container">
             <div class="card">
-                <i class="fas fa-home card-icon"></i>
-                <h3>משכנתא חדשה</h3>
-                <p>רכישת דירה היא העסקה הגדולה בחייכם. אבנה עבורכם תמהיל מותאם אישית שיחסוך לכם כסף רב.</p>
+                <div class="card-top">
+                    <span class="tag">רוכשי דירה</span>
+                    <i class="fas fa-home card-icon"></i>
+                </div>
+                <h3>משכנתא לרכישת דירה</h3>
+                <p>פיצוח יכולת ההחזר, בניית תמהיל מאוזן מול סיכונים והגשת תיק שמגדיל סיכויי אישור במהירות.</p>
             </div>
             <div class="card">
-                <i class="fas fa-sync-alt card-icon"></i>
+                <div class="card-top">
+                    <span class="tag">שקט כלכלי</span>
+                    <i class="fas fa-sync-alt card-icon"></i>
+                </div>
                 <h3>מחזור משכנתא</h3>
-                <p>הריביות השתנו? בואו נבדוק אם אפשר להוזיל את ההחזר החודשי או לקצר את תקופת המשכנתא.</p>
+                <p>בדיקת כדאיות, החלפת מסלולים והפחתת ריבית כדי להשאיר יותר כסף פנוי כל חודש – בלי להעמיס סיכון.</p>
             </div>
             <div class="card">
-                <i class="fas fa-chart-line card-icon"></i>
-                <h3>משכנתא למסורבים</h3>
-                <p>הבנק אמר לא? זה לא סוף פסוק. עם הניסיון הנכון, אפשר למצוא פתרונות יצירתיים.</p>
+                <div class="card-top">
+                    <span class="tag">משקיעים</span>
+                    <i class="fas fa-chart-line card-icon"></i>
+                </div>
+                <h3>ליווי השקעות ונכסים</h3>
+                <p>היערכות מוקדמת לעסקאות מורכבות, חיבור לבנקים הנכונים וליווי במו״מ עד שההצעה משתלמת.</p>
+            </div>
+            <div class="card">
+                <div class="card-top">
+                    <span class="tag">בדיקת בריאות</span>
+                    <i class="fas fa-stethoscope card-icon"></i>
+                </div>
+                <h3>בדיקת תיק קיימת</h3>
+                <p>סקירה מהירה ומדויקת של התיק הנוכחי, איתור נקודות תורפה ותוכנית פעולה שמחזירה שליטה.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="section process-section">
+        <div class="section-heading container">
+            <span class="eyebrow">תהליך ברור</span>
+            <h2 class="section-title">מהשיחה הראשונה עד המפתח</h2>
+            <p class="section-lead">תהליך עבודה סדור שמצמצם הפתעות ומביא אתכם לחתימה עם ביטחון.</p>
+        </div>
+        <div class="process-grid container">
+            <div class="process-card">
+                <div class="step-number">01</div>
+                <h3>מיפוי והיכרות</h3>
+                <p>שיחה ממוקדת שמגדירה מטרות, יכולת החזר וגבולות סיכון כדי לבנות תמונה פיננסית נקייה.</p>
+            </div>
+            <div class="process-card">
+                <div class="step-number">02</div>
+                <h3>בונים תמהיל</h3>
+                <p>מחקר מסלולים, חלוקת סיכונים וחישובי ריביות שמחברים בין עלויות לשקט נפשי.</p>
+            </div>
+            <div class="process-card">
+                <div class="step-number">03</div>
+                <h3>ניהול מו״מ</h3>
+                <p>פנייה לבנקים הנכונים, השוואת הצעות וחתירה לעמלת פתיחת תיק וריביות מיטביות.</p>
+            </div>
+            <div class="process-card">
+                <div class="step-number">04</div>
+                <h3>ליווי עד החתימה</h3>
+                <p>הסברים פשוטים, בדיקת מסמכים וסיוע בניירת עד קבלת האישור העקרוני והחתימה הסופית.</p>
             </div>
         </div>
     </section>
 
     <section id="about" class="section about-section">
-        <div class="about-container">
+        <div class="about-container container">
             <div class="about-text">
-                <h2>נעים להכיר, סיון סיונוב</h2>
-                <p>כיועצת משכנתאות, המטרה שלי היא אחת: לתת לכם שקט נפשי. עולם המשכנתאות עמוס בבירוקרטיה ומושגים מורכבים. התפקיד שלי הוא לפשט עבורכם את התהליך, להילחם מול הבנקים על הריביות הטובות ביותר, ולוודא שאתם לוקחים הלוואה שתוכלו לעמוד בה בכבוד.</p>
+                <span class="eyebrow">נעים להכיר</span>
+                <h2>סיון שמחי, יועצת משכנתאות</h2>
+                <p>אחרי שנים בבנקאות קמעונאית ונדל״ן למדתי שמה שמייצר ביטחון ללקוחות זה מידע ברור ותהליך שקוף. אני כאן כדי לתרגם את השפה הבנקאית, לנהל עבורכם את המו״מ ולוודא שכל החלטה מתאימה באמת לחיים שלכם.</p>
+                <div class="about-highlights">
+                    <span class="highlight-chip"><i class="fas fa-bullseye"></i> תכנון שמותאם ליעדים</span>
+                    <span class="highlight-chip"><i class="fas fa-scale-balanced"></i> איזון בין ריבית לסיכון</span>
+                    <span class="highlight-chip"><i class="fas fa-lightbulb"></i> הסברים פשוטים בכל שלב</span>
+                </div>
+                <div class="about-note">
+                    <i class="fas fa-circle-check"></i>
+                    <p>שקיפות מלאה בתהליך: אתם יודעים בדיוק מה קורה, מה העלויות ולמה בחרנו בכל מסלול.</p>
+                </div>
             </div>
             <div class="about-image">
-                <img src="images/sivan-profile.jpg" alt="סיון סיונוב" onerror="this.src='https://via.placeholder.com/400'">
+                <img src="images/sivan-profile.jpg" alt="סיון שמחי" onerror="this.src='https://via.placeholder.com/500'">
             </div>
         </div>
     </section>
 
     <section id="contact" class="section contact-section">
-        <div class="contact-box">
-            <h2>בואו נדבר תכל'ס</h2>
-            <p>השאירו פרטים ואחזור אליכם בהקדם לבדיקת זכאות ראשונית.</p>
-            
-            <form name="mortgage-leads" method="POST" data-netlify="true">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="שם מלא" required>
+        <div class="contact-grid container">
+            <div class="contact-panel">
+                <span class="eyebrow">שלב הבא</span>
+                <h2>בואו נדבר על הבית הבא שלכם</h2>
+                <p>פגישה קצרה ומדויקת שעוזרת להבין מה אפשר להשיג ואיך עושים את זה בלי כאבי ראש.</p>
+                <div class="contact-chips">
+                    <a class="contact-chip" href="tel:+972524540323">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>שיחת טלפון</strong>
+                            <span>05-2454-0323</span>
+                        </div>
+                    </a>
+                    <a class="contact-chip" href="https://wa.me/972524540323" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <strong>ווטסאפ מהיר</strong>
+                            <span>תשובות מהירות כולל מסמכים</span>
+                        </div>
+                    </a>
+                    <a class="contact-chip" href="mailto:Mortgage.sivan@gmail.com">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <div>
+                            <strong>מייל</strong>
+                            <span>Mortgage.sivan@gmail.com</span>
+                        </div>
+                    </a>
                 </div>
-                <div class="form-group">
-                    <input type="tel" name="phone" placeholder="מספר טלפון" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="כתובת אימייל (אופציונלי)">
-                </div>
-                <button type="submit" class="submit-btn">שלח פרטים</button>
-            </form>
-            
-            <div class="direct-contact">
-                <p>או במייל: <a href="mailto:Mortgage.sivan@gmail.com">Mortgage.sivan@gmail.com</a></p>
+                <p class="contact-note">עונה בימים א׳-ה׳ בין 09:00-19:00</p>
+            </div>
+
+            <div class="contact-form-box">
+                <h3>השאירו פרטים ואחזור אליכם</h3>
+                <form name="mortgage-leads" method="POST" data-netlify="true">
+                    <div class="form-group">
+                        <label for="name">שם מלא</label>
+                        <input id="name" type="text" name="name" placeholder="למשל: יעל כהן" required>
+                    </div>
+                    <div class="form-group split">
+                        <div>
+                            <label for="phone">טלפון</label>
+                            <input id="phone" type="tel" name="phone" placeholder="05x-xxxxxxx" required>
+                        </div>
+                        <div>
+                            <label for="email">אימייל</label>
+                            <input id="email" type="email" name="email" placeholder="name@email.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">מה חשוב לי לדעת?</label>
+                        <textarea id="message" name="message" rows="3" placeholder="האם זו רכישה, מחזור או בדיקה של תיק קיים?"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">שלחו לי פרטים</button>
+                </form>
+                <p class="form-disclaimer">טופס זה נשלח בצורה מאובטחת. לא מעבירה את פרטיכם הלאה.</p>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>© 2025 סיון סיונוב - ייעוץ משכנתאות. כל הזכויות שמורות.</p>
+        <p>© 2025 סיון שמחי - יועצת משכנתאות. כל הזכויות שמורות.</p>
     </footer>
 
     <a href="https://wa.me/972524540323" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (navToggle && navLinks) {
+            navToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('open');
+                navToggle.classList.toggle('open');
+                navToggle.setAttribute('aria-expanded', navToggle.classList.contains('open'));
+            });
+
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('open');
+                    navToggle.classList.remove('open');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+    </script>
 
 </body>
 </html>
