@@ -39,7 +39,7 @@
             <div class="container">
                 <p class="eyebrow">חישוב מדויק • רספונסיבי • נגיש</p>
                 <h1><i class="fas fa-calculator"></i> מחשבון משכנתא מתקדם</h1>
-                <p>בנו תמהיל של כמה מסלולים במקביל, קבלו לוחות סילוקין לפי שפיצר, קרן שווה או בוליט, בדקו עמידה במגבלות בנק ישראל, וראו איך מדד או שינוי ריבית משפיעים על ההחזר.</p>
+                <p>חשבו משכנתא במסלול אחד, קבלו לוחות סילוקין לפי שפיצר, קרן שווה או בוליט, וראו איך מדד או שינוי ריבית משפיעים על ההחזר.</p>
                 <div class="hero-pills">
                     <span><i class="fas fa-mobile-alt"></i> מותאם מובייל</span>
                     <span><i class="fas fa-gauge-high"></i> בדיקות מגבלה 33%</span>
@@ -53,7 +53,7 @@
                 <div class="calculator-wrapper">
                     <div class="calculator-header">
                         <div>
-                            <p class="section-lead">התחילו עם שני מסלולים לדוגמה וצרו כל שילוב שתרצו. כל שדה ממותג עם תווית נגישה, והגדרות מתקדמות זמינות בלחיצה.</p>
+                            <p class="section-lead">התחילו עם מסלול אחד לדוגמה וחישבו את המשכנתא. כל שדה ממותג עם תווית נגישה, והגדרות מתקדמות זמינות בלחיצה.</p>
                             <ul class="calc-guidelines">
                                 <li>שיטת החזר לבחירה: שפיצר (תשלום חודשי קבוע), קרן שווה (תשלום יורד), או בוליט (ריבית עד סוף התקופה).</li>
                                 <li>הוסיפו תחזית מדד לכל מסלול (ברירת המחדל 0%) והדמיית שינוי ריבית אחד בעתיד.</li>
@@ -72,17 +72,14 @@
                     <div id="tracks-list" class="tracks-list" aria-live="polite"></div>
 
                     <div class="calculator-actions">
-                        <button class="btn-add" type="button" onclick="addTrack()">
-                            <i class="fas fa-plus"></i> הוספת מסלול
-                        </button>
                         <button class="btn-calc" type="button" onclick="calculateAll()">
-                            <i class="fas fa-calculator"></i> חשב תמהיל
+                            <i class="fas fa-calculator"></i> חשב משכנתא
                         </button>
                     </div>
                 </div>
 
                 <div id="results-area" class="results-shell" aria-live="polite">
-                    <h3><i class="fas fa-chart-pie"></i> סיכום התמהיל</h3>
+                    <h3><i class="fas fa-chart-pie"></i> סיכום המשכנתא</h3>
                     <div id="compliance-note" class="compliance-note"></div>
                     <div class="summary-grid">
                         <div class="summary-item">
@@ -173,7 +170,6 @@
 
     const defaultTracks = [
         { name: 'קבועה לא צמודה', trackType: 'fixed-unlinked', amount: 500000, interest: 5.3, years: 25, madad: 0, repayment: 'shpitzer' },
-        { name: 'פריים', trackType: 'prime', amount: 300000, interest: 5.2, years: 20, madad: 0, repayment: 'shpitzer' }
     ];
 
     function addTrack(prefill = {}) {
@@ -200,10 +196,6 @@
                     <label class="field-label" for="${uid}">שם המסלול</label>
                     <input id="${uid}" type="text" class="track-name" placeholder="לדוגמה: קבועה לא צמודה" value="${data.name || ''}">
                 </div>
-                <button type="button" class="btn-remove" onclick="removeTrack(this)" title="הסרת מסלול">
-                    <i class="fas fa-trash"></i>
-                    <span class="sr-only">הסרת המסלול</span>
-                </button>
             </header>
             <div class="fields-grid">
                 <div class="field">
@@ -553,7 +545,7 @@
 
         if (warnings.length) {
             const list = warnings.map(w => `<li>${w}</li>`).join('');
-            complianceEl.innerHTML = `<div class="message warning"><i class="fas fa-triangle-exclamation"></i><div><strong>אזהרות תמהיל:</strong><ul>${list}</ul></div></div>`;
+            complianceEl.innerHTML = `<div class="message warning"><i class="fas fa-triangle-exclamation"></i><div><strong>אזהרות משכנתא:</strong><ul>${list}</ul></div></div>`;
         }
     }
 
