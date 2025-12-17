@@ -164,7 +164,18 @@
         'fixed-unlinked': 'קבועה לא צמודה',
         'fixed-linked': 'קבועה צמודה מדד',
         'prime': 'פריים',
-        'variable-5': 'משתנה כל 5',
+        'variable-1-linked': 'משתנה כל שנה צמודה מדד',
+        'variable-1-unlinked': 'משתנה כל שנה לא צמודה',
+        'variable-2-linked': 'משתנה כל שנתיים צמודה מדד',
+        'variable-2-unlinked': 'משתנה כל שנתיים לא צמודה',
+        'variable-3-linked': 'משתנה כל 3 שנים צמודה מדד',
+        'variable-3-unlinked': 'משתנה כל 3 שנים לא צמודה',
+        'variable-5-linked': 'משתנה כל 5 שנים צמודה מדד',
+        'variable-5-unlinked': 'משתנה כל 5 שנים לא צמודה',
+        'variable-7-linked': 'משתנה כל 7 שנים צמודה מדד',
+        'variable-7-unlinked': 'משתנה כל 7 שנים לא צמודה',
+        'variable-10-linked': 'משתנה כל 10 שנים צמודה מדד',
+        'variable-10-unlinked': 'משתנה כל 10 שנים לא צמודה',
         'bridge': 'בוליט / גישור'
     };
 
@@ -335,7 +346,8 @@
 
     function buildComplianceWarnings(tracks, totalPrincipal) {
         if (!totalPrincipal) return ['לא הוזן סכום כולל לתמהיל.'];
-        const variableTypes = ['prime', 'variable-5'];
+        const variableTypes = ['prime', 'variable-1-linked', 'variable-1-unlinked', 'variable-2-linked', 'variable-2-unlinked', 
+                              'variable-3-linked', 'variable-3-unlinked', 'variable-5-linked', 'variable-5-unlinked'];
         const fixedTypes = ['fixed-unlinked', 'fixed-linked'];
 
         const variableSum = tracks
