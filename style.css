@@ -1409,3 +1409,29 @@ details summary {
         grid-template-columns: 1fr;
     }
 }
+
+/* Footer */
+.site-footer {
+    background: var(--primary-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem 5vw;
+    margin-top: 0;
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.site-footer a {
+    color: var(--gold-accent);
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.site-footer a:hover {
+    color: var(--white);
+    text-decoration: underline;
+}
