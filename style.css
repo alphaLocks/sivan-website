@@ -1773,7 +1773,7 @@ footer {
   position: fixed;
   bottom: 30px;
   left: 30px;
-  background: var(--gold);
+  background: #25d366;
   color: var(--black);
   width: 60px;
   height: 60px;
