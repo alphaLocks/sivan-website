@@ -2155,15 +2155,17 @@ footer {
 
 /* Responsive theme switcher */
 @media (max-width: 768px) {
+  /* Theme switcher is now in navbar - no absolute positioning needed */
   .theme-switcher {
+    position: relative;
     top: auto;
-    bottom: 100px;
-    right: 0;
-    transform: translateY(0);
+    bottom: auto;
+    right: auto;
+    transform: none;
   }
 
   .theme-switcher.collapsed {
-    transform: translateX(calc(100% - 40px));
+    transform: none;
   }
 
   .back-to-top {
@@ -2866,8 +2868,12 @@ details summary {
 
 @media (max-width: 900px) {
   .navbar {
-    flex-wrap: wrap;
-    gap: 0.5rem;
+    flex-wrap: nowrap;
+    gap: 0.75rem;
+  }
+
+  .logo-container {
+    flex-shrink: 0;
   }
 
   .nav-links {
@@ -2892,7 +2898,8 @@ details summary {
 
   .nav-toggle {
     display: flex;
-    order: 2;
+    order: 3;
+    flex-shrink: 0;
   }
 
   .nav-links a {
@@ -2904,7 +2911,7 @@ details summary {
   /* Theme switcher responsive */
   .theme-switcher {
     display: flex !important;
-    order: 1;
+    order: 2;
     margin-right: 0;
     margin-left: auto;
     flex-shrink: 0;
@@ -2977,6 +2984,7 @@ details summary {
   .theme-switcher {
     display: flex !important;
     flex-shrink: 0;
+    order: 2;
   }
 
   .theme-switcher-toggle {
@@ -2989,6 +2997,8 @@ details summary {
     right: 0;
     left: auto;
     transform: translateY(-10px);
+    position: absolute;
+    top: calc(100% + 8px);
   }
 
   .theme-switcher:hover .theme-options,
@@ -2999,6 +3009,14 @@ details summary {
   .theme-btn {
     width: 26px;
     height: 26px;
+  }
+
+  .nav-toggle {
+    order: 3;
+  }
+
+  .logo-container {
+    order: 1;
   }
 
   .stat-value {
