@@ -1,268 +1,1640 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="יועצת משכנתאות סיון סיונוב – ליווי אישי מקצה לקצה, תכנון תמהיל חכם וחיסכון בעלויות.">
-    <title>סיון סיונוב | יועצת משכנתאות שמפשטת את המסלול</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="סיון סיונוב – יועצת משכנתאות פרימיום. ליווי אקסקלוסיבי ללקוחות נבחרים, ניהול מו״מ מול הבנקים ותכנון תמהיל אופטימלי."
+    />
+    <title>סיון סיונוב | יועצת משכנתאות פרימיום</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="logo-container">
-            <img src="images/logo.svg" alt="סיון סיונוב יועצת משכנתאות" class="nav-logo" width="112" height="56">
-        </div>
-        <button class="nav-toggle" aria-label="פתיחת תפריט">
-            <span></span>
-            <span></span>
-            <span></span>
+      <div class="logo-container">
+        <img
+          src="images/logo.svg"
+          alt="סיון סיונוב יועצת משכנתאות"
+          class="nav-logo"
+          width="112"
+          height="56"
+        />
+      </div>
+      <button class="nav-toggle" aria-label="פתיחת תפריט">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">אודות</a></li>
+        <li><a href="#services">שירותים</a></li>
+        <li><a href="#process">התהליך</a></li>
+        <li><a href="calculator.html">מחשבון</a></li>
+        <li><a href="#contact" class="nav-btn">צור קשר</a></li>
+      </ul>
+      <!-- Theme Switcher in Navbar -->
+      <div class="theme-switcher" id="themeSwitcher">
+        <button class="theme-switcher-toggle" aria-label="החלפת ערכת נושא">
+          <i class="fas fa-palette"></i>
         </button>
-        <ul class="nav-links">
-            <li><a href="#about">קצת עליי</a></li>
-            <li><a href="#services">איך אני עוזרת</a></li>
-            <li><a href="#process">תהליך הליווי</a></li>
-            <li><a href="calculator.html">מחשבון משכנתא</a></li>
-            <li><a href="#contact" class="nav-btn">דברו איתי</a></li>
-        </ul>
+        <div class="theme-options">
+          <button
+            class="theme-btn active"
+            data-theme="luxury-dark"
+            data-tooltip="יוקרה כהה"
+            aria-label="ערכת יוקרה כהה"
+          ></button>
+          <button
+            class="theme-btn"
+            data-theme="classic-elegance"
+            data-tooltip="אלגנטיות קלאסית"
+            aria-label="ערכת אלגנטיות קלאסית"
+          ></button>
+          <button
+            class="theme-btn"
+            data-theme="passion-energy"
+            data-tooltip="תשוקה ואנרגיה"
+            aria-label="ערכת תשוקה ואנרגיה"
+          ></button>
+          <button
+            class="theme-btn"
+            data-theme="success-growth"
+            data-tooltip="הצלחה וצמיחה"
+            aria-label="ערכת הצלחה וצמיחה"
+          ></button>
+          <button
+            class="theme-btn"
+            data-theme="ocean-calm"
+            data-tooltip="שלוות האוקיינוס"
+            aria-label="ערכת שלוות האוקיינוס"
+          ></button>
+        </div>
+      </div>
     </nav>
 
     <main id="main-content">
-    <header class="hero">
+      <header class="hero">
         <div class="hero-shell container">
-            <div class="hero-content">
-                <span class="eyebrow">ליווי אישי מקצה לקצה</span>
-                <h1>משכנתא חכמה מתחילה בתכנון אישי</h1>
-                <p class="subtitle">אני סיון סיונוב, יועצת משכנתאות שמתרגמת מספרים להחלטות פשוטות. יחד נבנה מסלול שמתאים לבית, לקצב החיים ולשקט הנפשי שלכם.</p>
-                <div class="hero-actions">
-                    <a href="#contact" class="cta-button">שיחת היכרות ללא עלות</a>
-                    <a href="calculator.html" class="cta-button secondary">מעבר למחשבון</a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat-card">
-                        <i class="fas fa-people-group"></i>
-                        <p class="stat-label">משפחות שליוויתי</p>
-                        <p class="stat-value">120+</p>
-                    </div>
-                    <div class="stat-card">
-                        <i class="fas fa-handshake-angle"></i>
-                        <p class="stat-label">אישור עקרוני ממוצע</p>
-                        <p class="stat-value">8 ימי עסקים</p>
-                    </div>
-                    <div class="stat-card">
-                        <i class="fas fa-star"></i>
-                        <p class="stat-label">ציון המלצות</p>
-                        <p class="stat-value">5</p>
-                    </div>
-                </div>
+          <div class="hero-content">
+            <span class="eyebrow">שירות פרימיום ללקוחות נבחרים</span>
+            <h1>משכנתא ברמה אחרת לגמרי</h1>
+            <p class="subtitle">
+              אני סיון סיונוב, יועצת משכנתאות שמעניקה ללקוחותיה יחס אישי
+              ומקצועיות ללא פשרות. עם ניסיון עשיר בעסקאות מורכבות, אני מובילה
+              אתכם לתוצאות יוצאות דופן.
+            </p>
+            <div class="hero-actions">
+              <a href="#contact" class="cta-button">לתיאום פגישת היכרות</a>
+              <a href="calculator.html" class="cta-button secondary"
+                >מחשבון משכנתא</a
+              >
             </div>
-            <div class="hero-card">
-                <div class="mini-card">
-                    <p class="mini-title">איך נראה הליווי איתי?</p>
-                    <ul class="hero-list">
-                        <li><i class="fas fa-check"></i> פגישה ממוקדת אונליין או פרונטלית</li>
-                        <li><i class="fas fa-check"></i> תכנון תמהיל שמותאם ליכולת ההחזר</li>
-                        <li><i class="fas fa-check"></i> ניהול מו״מ מול הבנקים עד החתימה</li>
-                    </ul>
-                    <a href="#contact" class="inline-link">קובעים שיחה ›</a>
-                </div>
+            <div class="hero-stats">
+              <div class="stat-card">
+                <i class="fas fa-gem"></i>
+                <p class="stat-label">עסקאות מורכבות</p>
+                <p class="stat-value">120+</p>
+              </div>
+              <div class="stat-card">
+                <i class="fas fa-bolt"></i>
+                <p class="stat-label">אישור עקרוני ממוצע</p>
+                <p class="stat-value">8 ימים</p>
+              </div>
+              <div class="stat-card">
+                <i class="fas fa-crown"></i>
+                <p class="stat-label">דירוג לקוחות</p>
+                <p class="stat-value">5.0</p>
+              </div>
             </div>
+          </div>
+          <div class="hero-card">
+            <div class="mini-card">
+              <p class="mini-title">למה לקוחות בוחרים בי?</p>
+              <ul class="hero-list">
+                <li>
+                  <i class="fas fa-check"></i> גישה ישירה וזמינות מלאה לכל אורך
+                  התהליך
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> מומחיות בעסקאות נדל״ן מורכבות
+                  ויוקרתיות
+                </li>
+                <li>
+                  <i class="fas fa-check"></i> ניהול מו״מ אגרסיבי מול הבנקים
+                  לתנאים מיטביים
+                </li>
+              </ul>
+              <a href="#contact" class="inline-link">קבעו פגישה ›</a>
+            </div>
+          </div>
         </div>
-    </header>
 
-    <section id="services" class="section">
+        <!-- Hero Animation -->
+        <div class="hero-animation">
+          <svg
+            class="hero-svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <!-- Gradient Definitions -->
+            <defs>
+              <linearGradient
+                id="goldGradient"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+              >
+                <stop
+                  offset="0%"
+                  style="stop-color: #a68b4b; stop-opacity: 0"
+                />
+                <stop
+                  offset="50%"
+                  style="stop-color: #c9a962; stop-opacity: 1"
+                />
+                <stop
+                  offset="100%"
+                  style="stop-color: #a68b4b; stop-opacity: 0"
+                />
+              </linearGradient>
+              <linearGradient
+                id="goldGradient2"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="0%"
+              >
+                <stop
+                  offset="0%"
+                  style="stop-color: #c9a962; stop-opacity: 0"
+                />
+                <stop
+                  offset="30%"
+                  style="stop-color: #d4bb7a; stop-opacity: 0.6"
+                />
+                <stop
+                  offset="70%"
+                  style="stop-color: #d4bb7a; stop-opacity: 0.6"
+                />
+                <stop
+                  offset="100%"
+                  style="stop-color: #c9a962; stop-opacity: 0"
+                />
+              </linearGradient>
+              <filter id="glow">
+                <feGaussianBlur stdDeviation="2" result="coloredBlur" />
+                <feMerge>
+                  <feMergeNode in="coloredBlur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+
+            <!-- Animated flowing lines -->
+            <path
+              class="flow-line line-1"
+              d="M0,60 Q300,20 600,60 T1200,60"
+              fill="none"
+              stroke="url(#goldGradient)"
+              stroke-width="1"
+            />
+            <path
+              class="flow-line line-2"
+              d="M0,70 Q300,30 600,70 T1200,70"
+              fill="none"
+              stroke="url(#g oldGradient)"
+              stroke-width="0.5"
+            />
+            <path
+              class="flow-line line-3"
+              d="M0,80 Q300,40 600,80 T1200,80"
+              fill="none"
+              stroke="url(#goldGradient2)"
+              stroke-width="0.3"
+            />
+          </svg>
+
+          <!-- Floating Key Animation -->
+          <div class="key-container">
+            <svg
+              class="golden-key"
+              viewBox="0 0 120 60"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <linearGradient
+                  id="keyGold"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop offset="0%" style="stop-color: #e8d5a3" />
+                  <stop offset="30%" style="stop-color: #d4bb7a" />
+                  <stop offset="50%" style="stop-color: #c9a962" />
+                  <stop offset="70%" style="stop-color: #b8954d" />
+                  <stop offset="100%" style="stop-color: #a68b4b" />
+                </linearGradient>
+                <linearGradient id="keyShine" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop
+                    offset="0%"
+                    style="stop-color: #fff8e7; stop-opacity: 0.9"
+                  />
+                  <stop
+                    offset="50%"
+                    style="stop-color: #d4bb7a; stop-opacity: 0.3"
+                  />
+                  <stop
+                    offset="100%"
+                    style="stop-color: #a68b4b; stop-opacity: 0"
+                  />
+                </linearGradient>
+                <filter
+                  id="keyGlow"
+                  x="-50%"
+                  y="-50%"
+                  width="200%"
+                  height="200%"
+                >
+                  <feGaussianBlur stdDeviation="2" result="blur1" />
+                  <feGaussianBlur stdDeviation="4" result="blur2" />
+                  <feMerge>
+                    <feMergeNode in="blur2" />
+                    <feMergeNode in="blur1" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+
+              <!-- Key base shape - all connected -->
+              <g class="key-group" filter="url(#keyGlow)">
+                <!-- Key head outer ring -->
+                <circle
+                  cx="22"
+                  cy="30"
+                  r="16"
+                  fill="none"
+                  stroke="url(#keyGold)"
+                  stroke-width="5"
+                  class="key-head"
+                />
+                <!-- Key head inner cutout -->
+                <circle
+                  cx="22"
+                  cy="30"
+                  r="7"
+                  fill="none"
+                  stroke="url(#keyGold)"
+                  stroke-width="3"
+                  class="key-inner"
+                />
+                <!-- Key shaft - connected to head -->
+                <rect
+                  x="36"
+                  y="27"
+                  width="68"
+                  height="6"
+                  rx="2"
+                  fill="url(#keyGold)"
+                  class="key-shaft-fill"
+                />
+                <!-- Key teeth - connected to shaft -->
+                <path
+                  d="M75,33 L75,45 L80,45 L80,33 M87,33 L87,42 L92,42 L92,33 M99,33 L99,48 L104,48 L104,33"
+                  fill="url(#keyGold)"
+                  class="key-teeth"
+                />
+              </g>
+
+              <!-- Shine overlay -->
+              <g class="key-shine-group">
+                <ellipse
+                  cx="22"
+                  cy="24"
+                  rx="8"
+                  ry="4"
+                  fill="url(#keyShine)"
+                  class="key-shine"
+                  opacity="0.7"
+                />
+                <rect
+                  x="45"
+                  y="27"
+                  width="30"
+                  height="2"
+                  rx="1"
+                  fill="url(#keyShine)"
+                  class="shaft-shine"
+                  opacity="0.5"
+                />
+              </g>
+            </svg>
+          </div>
+
+          <!-- Floating particles -->
+          <div class="particles">
+            <span class="particle"></span>
+            <span class="particle"></span>
+            <span class="particle"></span>
+            <span class="particle"></span>
+            <span class="particle"></span>
+            <span class="particle"></span>
+            <span class="particle"></span>
+            <span class="particle"></span>
+          </div>
+
+          <!-- House outline that draws itself -->
+          <div class="house-container house-1">
+            <svg
+              class="house-outline"
+              viewBox="0 0 140 110"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <linearGradient
+                  id="houseGold"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop
+                    offset="0%"
+                    style="stop-color: #e8d5a3; stop-opacity: 0.9"
+                  />
+                  <stop
+                    offset="100%"
+                    style="stop-color: #a68b4b; stop-opacity: 0.5"
+                  />
+                </linearGradient>
+                <filter
+                  id="houseGlow"
+                  x="-30%"
+                  y="-30%"
+                  width="160%"
+                  height="160%"
+                >
+                  <feGaussianBlur stdDeviation="1.5" result="blur" />
+                  <feMerge>
+                    <feMergeNode in="blur" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+              <!-- Modern Luxury Villa -->
+              <g filter="url(#houseGlow)">
+                <!-- Main structure -->
+                <rect
+                  class="house-path walls"
+                  x="10"
+                  y="40"
+                  width="80"
+                  height="55"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1.5"
+                />
+                <!-- Upper floor / penthouse -->
+                <rect
+                  class="house-path walls"
+                  x="20"
+                  y="20"
+                  width="50"
+                  height="20"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1.5"
+                />
+                <!-- Roof accent -->
+                <line
+                  class="house-path roof"
+                  x1="15"
+                  y1="40"
+                  x2="95"
+                  y2="40"
+                  stroke="url(#houseGold)"
+                  stroke-width="2"
+                />
+                <!-- Large panoramic windows -->
+                <rect
+                  class="house-path window"
+                  x="18"
+                  y="50"
+                  width="25"
+                  height="18"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1"
+                  rx="1"
+                />
+                <rect
+                  class="house-path window"
+                  x="50"
+                  y="50"
+                  width="25"
+                  height="18"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1"
+                  rx="1"
+                />
+                <!-- Penthouse windows -->
+                <rect
+                  class="house-path window"
+                  x="28"
+                  y="25"
+                  width="15"
+                  height="10"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1"
+                  rx="1"
+                />
+                <rect
+                  class="house-path window"
+                  x="48"
+                  y="25"
+                  width="15"
+                  height="10"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1"
+                  rx="1"
+                />
+                <!-- Grand entrance -->
+                <rect
+                  class="house-path door"
+                  x="35"
+                  y="75"
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1.5"
+                  rx="2"
+                />
+                <!-- Garage -->
+                <rect
+                  class="house-path door"
+                  x="95"
+                  y="55"
+                  width="30"
+                  height="40"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1"
+                />
+                <line
+                  class="house-path"
+                  x1="95"
+                  y1="65"
+                  x2="125"
+                  y2="65"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.5"
+                />
+                <line
+                  class="house-path"
+                  x1="95"
+                  y1="75"
+                  x2="125"
+                  y2="75"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.5"
+                />
+                <line
+                  class="house-path"
+                  x1="95"
+                  y1="85"
+                  x2="125"
+                  y2="85"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.5"
+                />
+              </g>
+            </svg>
+          </div>
+
+          <!-- Second House - Left Side -->
+          <div class="house-container house-2">
+            <svg
+              class="house-outline"
+              viewBox="0 0 120 100"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <!-- Classic Mansion with Columns -->
+              <g filter="url(#houseGlow)">
+                <!-- Main roof - triangular pediment -->
+                <path
+                  class="house-path roof"
+                  d="M60,5 L10,35 L110,35 Z"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+                <!-- Roof detail -->
+                <path
+                  class="house-path roof"
+                  d="M60,12 L30,30 L90,30 Z"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+                <!-- Main walls -->
+                <rect
+                  class="house-path walls"
+                  x="15"
+                  y="35"
+                  width="90"
+                  height="55"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1.5"
+                />
+                <!-- Columns -->
+                <line
+                  class="house-path walls"
+                  x1="30"
+                  y1="35"
+                  x2="30"
+                  y2="90"
+                  stroke="url(#houseGold)"
+                  stroke-width="2"
+                />
+                <line
+                  class="house-path walls"
+                  x1="50"
+                  y1="35"
+                  x2="50"
+                  y2="90"
+                  stroke="url(#houseGold)"
+                  stroke-width="2"
+                />
+                <line
+                  class="house-path walls"
+                  x1="70"
+                  y1="35"
+                  x2="70"
+                  y2="90"
+                  stroke="url(#houseGold)"
+                  stroke-width="2"
+                />
+                <line
+                  class="house-path walls"
+                  x1="90"
+                  y1="35"
+                  x2="90"
+                  y2="90"
+                  stroke="url(#houseGold)"
+                  stroke-width="2"
+                />
+                <!-- Column bases -->
+                <rect
+                  class="house-path"
+                  x="27"
+                  y="85"
+                  width="6"
+                  height="5"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+                <rect
+                  class="house-path"
+                  x="47"
+                  y="85"
+                  width="6"
+                  height="5"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+                <rect
+                  class="house-path"
+                  x="67"
+                  y="85"
+                  width="6"
+                  height="5"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+                <rect
+                  class="house-path"
+                  x="87"
+                  y="85"
+                  width="6"
+                  height="5"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+                <!-- Grand double doors -->
+                <rect
+                  class="house-path door"
+                  x="52"
+                  y="60"
+                  width="16"
+                  height="30"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1.2"
+                  rx="8"
+                />
+                <line
+                  class="house-path door"
+                  x1="60"
+                  y1="60"
+                  x2="60"
+                  y2="90"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+                <!-- Arched windows -->
+                <path
+                  class="house-path window"
+                  d="M25,45 L25,58 Q25,62 29,62 L35,62 Q39,62 39,58 L39,45 Q32,40 25,45"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1"
+                />
+                <path
+                  class="house-path window"
+                  d="M81,45 L81,58 Q81,62 85,62 L91,62 Q95,62 95,58 L95,45 Q88,40 81,45"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1"
+                />
+              </g>
+            </svg>
+          </div>
+
+          <!-- Third House - Far Right -->
+          <div class="house-container house-3">
+            <svg
+              class="house-outline"
+              viewBox="0 0 100 90"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <!-- Contemporary Penthouse Tower -->
+              <g filter="url(#houseGlow)">
+                <!-- Tower structure -->
+                <rect
+                  class="house-path walls"
+                  x="20"
+                  y="15"
+                  width="60"
+                  height="70"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1.5"
+                />
+                <!-- Roof terrace railing -->
+                <line
+                  class="house-path roof"
+                  x1="15"
+                  y1="15"
+                  x2="85"
+                  y2="15"
+                  stroke="url(#houseGold)"
+                  stroke-width="2"
+                />
+                <line
+                  class="house-path"
+                  x1="20"
+                  y1="10"
+                  x2="20"
+                  y2="15"
+                  stroke="url(#houseGold)"
+                  stroke-width="1"
+                />
+                <line
+                  class="house-path"
+                  x1="50"
+                  y1="10"
+                  x2="50"
+                  y2="15"
+                  stroke="url(#houseGold)"
+                  stroke-width="1"
+                />
+                <line
+                  class="house-path"
+                  x1="80"
+                  y1="10"
+                  x2="80"
+                  y2="15"
+                  stroke="url(#houseGold)"
+                  stroke-width="1"
+                />
+                <line
+                  class="house-path"
+                  x1="15"
+                  y1="10"
+                  x2="85"
+                  y2="10"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+                <!-- Floor dividers -->
+                <line
+                  class="house-path walls"
+                  x1="20"
+                  y1="35"
+                  x2="80"
+                  y2="35"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+                <line
+                  class="house-path walls"
+                  x1="20"
+                  y1="55"
+                  x2="80"
+                  y2="55"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+                <!-- Full-height windows -->
+                <rect
+                  class="house-path window"
+                  x="25"
+                  y="20"
+                  width="20"
+                  height="12"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1"
+                />
+                <rect
+                  class="house-path window"
+                  x="55"
+                  y="20"
+                  width="20"
+                  height="12"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1"
+                />
+                <rect
+                  class="house-path window"
+                  x="25"
+                  y="40"
+                  width="20"
+                  height="12"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1"
+                />
+                <rect
+                  class="house-path window"
+                  x="55"
+                  y="40"
+                  width="20"
+                  height="12"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1"
+                />
+                <rect
+                  class="house-path window"
+                  x="25"
+                  y="60"
+                  width="20"
+                  height="12"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1"
+                />
+                <rect
+                  class="house-path window"
+                  x="55"
+                  y="60"
+                  width="20"
+                  height="12"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1"
+                />
+                <!-- Entrance -->
+                <rect
+                  class="house-path door"
+                  x="40"
+                  y="75"
+                  width="20"
+                  height="10"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1.2"
+                />
+                <!-- Balcony accent -->
+                <line
+                  class="house-path"
+                  x1="25"
+                  y1="52"
+                  x2="45"
+                  y2="52"
+                  stroke="url(#houseGold)"
+                  stroke-width="1.5"
+                />
+              </g>
+            </svg>
+          </div>
+
+          <!-- Fourth Building - Luxury Apartment Complex -->
+          <div class="house-container house-4">
+            <svg
+              class="house-outline"
+              viewBox="0 0 100 90"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g filter="url(#houseGlow)">
+                <!-- Main tower -->
+                <rect
+                  class="house-path walls"
+                  x="15"
+                  y="10"
+                  width="70"
+                  height="75"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1.5"
+                />
+                <!-- Stepped top -->
+                <rect
+                  class="house-path roof"
+                  x="25"
+                  y="5"
+                  width="50"
+                  height="8"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1.2"
+                />
+                <rect
+                  class="house-path roof"
+                  x="35"
+                  y="0"
+                  width="30"
+                  height="8"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1"
+                />
+                <!-- Window grid - row 1 -->
+                <rect
+                  class="house-path window"
+                  x="20"
+                  y="15"
+                  width="12"
+                  height="10"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+                <rect
+                  class="house-path window"
+                  x="38"
+                  y="15"
+                  width="12"
+                  height="10"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+                <rect
+                  class="house-path window"
+                  x="56"
+                  y="15"
+                  width="12"
+                  height="10"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+                <rect
+                  class="house-path window"
+                  x="74"
+                  y="15"
+                  width="8"
+                  height="10"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+                <!-- Window grid - row 2 -->
+                <rect
+                  class="house-path window"
+                  x="20"
+                  y="30"
+                  width="12"
+                  height="10"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+                <rect
+                  class="house-path window"
+                  x="38"
+                  y="30"
+                  width="12"
+                  height="10"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+                <rect
+                  class="house-path window"
+                  x="56"
+                  y="30"
+                  width="12"
+                  height="10"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+                <rect
+                  class="house-path window"
+                  x="74"
+                  y="30"
+                  width="8"
+                  height="10"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+                <!-- Window grid - row 3 -->
+                <rect
+                  class="house-path window"
+                  x="20"
+                  y="45"
+                  width="12"
+                  height="10"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+                <rect
+                  class="house-path window"
+                  x="38"
+                  y="45"
+                  width="12"
+                  height="10"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+                <rect
+                  class="house-path window"
+                  x="56"
+                  y="45"
+                  width="12"
+                  height="10"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+                <rect
+                  class="house-path window"
+                  x="74"
+                  y="45"
+                  width="8"
+                  height="10"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+                <!-- Window grid - row 4 -->
+                <rect
+                  class="house-path window"
+                  x="20"
+                  y="60"
+                  width="12"
+                  height="10"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+                <rect
+                  class="house-path window"
+                  x="56"
+                  y="60"
+                  width="12"
+                  height="10"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+                <rect
+                  class="house-path window"
+                  x="74"
+                  y="60"
+                  width="8"
+                  height="10"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+                <!-- Lobby entrance -->
+                <rect
+                  class="house-path door"
+                  x="35"
+                  y="60"
+                  width="18"
+                  height="25"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1.2"
+                  rx="3"
+                />
+                <line
+                  class="house-path door"
+                  x1="44"
+                  y1="60"
+                  x2="44"
+                  y2="85"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.6"
+                />
+              </g>
+            </svg>
+          </div>
+
+          <!-- Fifth Building - Modern Townhouse -->
+          <div class="house-container house-5">
+            <svg
+              class="house-outline"
+              viewBox="0 0 100 90"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g filter="url(#houseGlow)">
+                <!-- Asymmetric roof -->
+                <path
+                  class="house-path roof"
+                  d="M10,35 L50,8 L90,35"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+                <!-- Chimney -->
+                <rect
+                  class="house-path roof"
+                  x="70"
+                  y="12"
+                  width="8"
+                  height="18"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1"
+                />
+                <!-- Main structure -->
+                <rect
+                  class="house-path walls"
+                  x="15"
+                  y="35"
+                  width="70"
+                  height="50"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1.5"
+                />
+                <!-- Garage section -->
+                <rect
+                  class="house-path walls"
+                  x="55"
+                  y="55"
+                  width="28"
+                  height="30"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1"
+                />
+                <!-- Garage door -->
+                <rect
+                  class="house-path door"
+                  x="58"
+                  y="60"
+                  width="22"
+                  height="25"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1"
+                  rx="2"
+                />
+                <line
+                  class="house-path door"
+                  x1="58"
+                  y1="72"
+                  x2="80"
+                  y2="72"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.5"
+                />
+                <!-- Large window -->
+                <rect
+                  class="house-path window"
+                  x="22"
+                  y="42"
+                  width="25"
+                  height="18"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1"
+                />
+                <line
+                  class="house-path window"
+                  x1="34.5"
+                  y1="42"
+                  x2="34.5"
+                  y2="60"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.6"
+                />
+                <line
+                  class="house-path window"
+                  x1="22"
+                  y1="51"
+                  x2="47"
+                  y2="51"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.6"
+                />
+                <!-- Entry door -->
+                <rect
+                  class="house-path door"
+                  x="25"
+                  y="65"
+                  width="12"
+                  height="20"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1.2"
+                  rx="1"
+                />
+                <!-- Side window -->
+                <rect
+                  class="house-path window"
+                  x="42"
+                  y="68"
+                  width="8"
+                  height="10"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+              </g>
+            </svg>
+          </div>
+
+          <!-- Sixth Building - Art Deco Tower -->
+          <div class="house-container house-6">
+            <svg
+              class="house-outline"
+              viewBox="0 0 100 90"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g filter="url(#houseGlow)">
+                <!-- Spire top -->
+                <path
+                  class="house-path roof"
+                  d="M50,0 L45,12 L55,12 Z"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1"
+                />
+                <!-- Decorative crown -->
+                <path
+                  class="house-path roof"
+                  d="M35,12 L35,20 L65,20 L65,12"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1.2"
+                />
+                <line
+                  class="house-path roof"
+                  x1="40"
+                  y1="12"
+                  x2="40"
+                  y2="20"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.6"
+                />
+                <line
+                  class="house-path roof"
+                  x1="50"
+                  y1="12"
+                  x2="50"
+                  y2="20"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.6"
+                />
+                <line
+                  class="house-path roof"
+                  x1="60"
+                  y1="12"
+                  x2="60"
+                  y2="20"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.6"
+                />
+                <!-- Main tower -->
+                <rect
+                  class="house-path walls"
+                  x="30"
+                  y="20"
+                  width="40"
+                  height="65"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1.5"
+                />
+                <!-- Art deco corners -->
+                <path
+                  class="house-path walls"
+                  d="M25,25 L30,20 L30,30"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1"
+                />
+                <path
+                  class="house-path walls"
+                  d="M75,25 L70,20 L70,30"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1"
+                />
+                <!-- Decorative bands -->
+                <line
+                  class="house-path walls"
+                  x1="30"
+                  y1="35"
+                  x2="70"
+                  y2="35"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+                <line
+                  class="house-path walls"
+                  x1="30"
+                  y1="55"
+                  x2="70"
+                  y2="55"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+                <!-- Windows - zigzag style -->
+                <path
+                  class="house-path window"
+                  d="M38,25 L38,32 L45,32 L45,25"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+                <path
+                  class="house-path window"
+                  d="M55,25 L55,32 L62,32 L62,25"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+                <path
+                  class="house-path window"
+                  d="M38,40 L38,50 L45,50 L45,40"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+                <path
+                  class="house-path window"
+                  d="M55,40 L55,50 L62,50 L62,40"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+                <path
+                  class="house-path window"
+                  d="M38,60 L38,70 L45,70 L45,60"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+                <path
+                  class="house-path window"
+                  d="M55,60 L55,70 L62,70 L62,60"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="0.8"
+                />
+                <!-- Grand entrance -->
+                <rect
+                  class="house-path door"
+                  x="42"
+                  y="75"
+                  width="16"
+                  height="10"
+                  fill="none"
+                  stroke="url(#houseGold)"
+                  stroke-width="1.2"
+                  rx="8"
+                />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </header>
+
+      <section id="services" class="section">
         <div class="section-heading container">
-            <span class="eyebrow">מה נעשה ביחד</span>
-            <h2 class="section-title">מסלול משכנתא שנבנה סביבכם</h2>
-            <p class="section-lead">שירות אישי, שקוף ומדויק שמפנה לכם זמן ואנרגיה להתעסק בדברים החשובים באמת.</p>
+          <span class="eyebrow">השירותים שלי</span>
+          <h2 class="section-title">פתרונות מימון מותאמים אישית</h2>
+          <p class="section-lead">
+            כל לקוח מקבל אסטרטגיית מימון ייחודית, מותאמת למטרותיו ולפרופיל
+            הפיננסי שלו.
+          </p>
         </div>
         <div class="cards-grid container">
-            <div class="card">
-                <div class="card-top">
-                    <span class="tag">רוכשי דירה</span>
-                    <i class="fas fa-home card-icon"></i>
-                </div>
-                <h3>משכנתא לרכישת דירה</h3>
-                <p>פיצוח יכולת ההחזר, בניית תמהיל מאוזן מול סיכונים והגשת תיק שמגדיל סיכויי אישור במהירות.</p>
+          <div class="card">
+            <div class="card-top">
+              <span class="tag">רוכשים</span>
+              <i class="fas fa-building card-icon"></i>
             </div>
-            <div class="card">
-                <div class="card-top">
-                    <span class="tag">שקט כלכלי</span>
-                    <i class="fas fa-sync-alt card-icon"></i>
-                </div>
-                <h3>מחזור משכנתא</h3>
-                <p>בדיקת כדאיות, החלפת מסלולים והפחתת ריבית כדי להשאיר יותר כסף פנוי כל חודש – בלי להעמיס סיכון.</p>
+            <h3>משכנתא לרכישה</h3>
+            <p>
+              ליווי מקיף מרגע חיפוש הנכס ועד לחתימה. בניית תמהיל אופטימלי שמאזן
+              בין עלויות לסיכונים.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-top">
+              <span class="tag">אופטימיזציה</span>
+              <i class="fas fa-sync-alt card-icon"></i>
             </div>
-            <div class="card">
-                <div class="card-top">
-                    <span class="tag">משקיעים</span>
-                    <i class="fas fa-chart-line card-icon"></i>
-                </div>
-                <h3>ליווי השקעות ונכסים</h3>
-                <p>היערכות מוקדמת לעסקאות מורכבות, חיבור לבנקים הנכונים וליווי במו״מ עד שההצעה משתלמת.</p>
+            <h3>מחזור משכנתא</h3>
+            <p>
+              ניתוח התמהיל הקיים, זיהוי פוטנציאל חיסכון והחלפת מסלולים בתנאים
+              משופרים משמעותית.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-top">
+              <span class="tag">משקיעים</span>
+              <i class="fas fa-chart-line card-icon"></i>
             </div>
-            <div class="card">
-                <div class="card-top">
-                    <span class="tag">בדיקת בריאות</span>
-                    <i class="fas fa-stethoscope card-icon"></i>
-                </div>
-                <h3>בדיקת תיק קיימת</h3>
-                <p>סקירה מהירה ומדויקת של התיק הנוכחי, איתור נקודות תורפה ותוכנית פעולה שמחזירה שליטה.</p>
+            <h3>מימון השקעות</h3>
+            <p>
+              מומחיות בעסקאות מורכבות, נכסים מניבים ומימון פרויקטים. גישה לערוצי
+              מימון מיוחדים.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-top">
+              <span class="tag">ביקורת</span>
+              <i class="fas fa-search-dollar card-icon"></i>
             </div>
+            <h3>סקירת תיק קיים</h3>
+            <p>
+              בדיקה מקיפה של תנאי המשכנתא הנוכחית, איתור נקודות שיפור והמלצות
+              לפעולה.
+            </p>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section id="process" class="section process-section">
+      <section id="process" class="section process-section">
         <div class="section-heading container">
-            <span class="eyebrow">תהליך ברור</span>
-            <h2 class="section-title">מהשיחה הראשונה עד המפתח</h2>
-            <p class="section-lead">תהליך עבודה סדור שמצמצם הפתעות ומביא אתכם לחתימה עם ביטחון.</p>
+          <span class="eyebrow">התהליך</span>
+          <h2 class="section-title">מהפגישה הראשונה עד המפתח</h2>
+          <p class="section-lead">
+            תהליך מובנה ומקצועי שמבטיח תוצאות מיטביות בכל שלב.
+          </p>
         </div>
         <div class="process-grid container">
-            <div class="process-card">
-                <div class="step-number">01</div>
-                <h3>מיפוי והיכרות</h3>
-                <p>שיחה ממוקדת שמגדירה מטרות, יכולת החזר וגבולות סיכון כדי לבנות תמונה פיננסית נקייה.</p>
-            </div>
-            <div class="process-card">
-                <div class="step-number">02</div>
-                <h3>בונים תמהיל</h3>
-                <p>מחקר מסלולים, חלוקת סיכונים וחישובי ריביות שמחברים בין עלויות לשקט נפשי.</p>
-            </div>
-            <div class="process-card">
-                <div class="step-number">03</div>
-                <h3>ניהול מו״מ</h3>
-                <p>פנייה לבנקים הנכונים, השוואת הצעות וחתירה לעמלת פתיחת תיק וריביות מיטביות.</p>
-            </div>
-            <div class="process-card">
-                <div class="step-number">04</div>
-                <h3>ליווי עד החתימה</h3>
-                <p>הסברים פשוטים, בדיקת מסמכים וסיוע בניירת עד קבלת האישור העקרוני והחתימה הסופית.</p>
-            </div>
+          <div class="process-card">
+            <div class="step-number">01</div>
+            <h3>אבחון פיננסי</h3>
+            <p>
+              ניתוח מעמיק של המצב הפיננסי, הגדרת יעדים ומיפוי אפשרויות המימון
+              האופטימליות.
+            </p>
+          </div>
+          <div class="process-card">
+            <div class="step-number">02</div>
+            <h3>אסטרטגיית תמהיל</h3>
+            <p>
+              תכנון תמהיל מותאם אישית שמאזן בין ריביות, סיכונים וגמישות עתידית.
+            </p>
+          </div>
+          <div class="process-card">
+            <div class="step-number">03</div>
+            <h3>ניהול מו״מ</h3>
+            <p>
+              משא ומתן אגרסיבי מול מספר בנקים במקביל להשגת התנאים הטובים ביותר.
+            </p>
+          </div>
+          <div class="process-card">
+            <div class="step-number">04</div>
+            <h3>סגירה וליווי</h3>
+            <p>
+              ליווי צמוד עד לחתימה, בדיקת כל מסמך וודאות שהכל מתבצע כמתוכנן.
+            </p>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section id="about" class="section about-section">
+      <section id="about" class="section about-section">
         <div class="about-container container">
-            <div class="about-text">
-                <span class="eyebrow">נעים להכיר</span>
-                <h2>סיון סיונוב, יועצת משכנתאות</h2>
-                <p>אחרי שנים בבנקאות קמעונאית ונדל״ן למדתי שמה שמייצר ביטחון ללקוחות זה מידע ברור ותהליך שקוף. אני כאן כדי לתרגם את השפה הבנקאית, לנהל עבורכם את המו״מ ולוודא שכל החלטה מתאימה באמת לחיים שלכם.</p>
-                <div class="about-highlights">
-                    <span class="highlight-chip"><i class="fas fa-bullseye"></i> תכנון שמותאם ליעדים</span>
-                    <span class="highlight-chip"><i class="fas fa-scale-balanced"></i> איזון בין ריבית לסיכון</span>
-                    <span class="highlight-chip"><i class="fas fa-lightbulb"></i> הסברים פשוטים בכל שלב</span>
-                </div>
-                <div class="about-note">
-                    <i class="fas fa-circle-check"></i>
-                    <p>שקיפות מלאה בתהליך: אתם יודעים בדיוק מה קורה, מה העלויות ולמה בחרנו בכל מסלול.</p>
-                </div>
+          <div class="about-text">
+            <span class="eyebrow">נעים להכיר</span>
+            <h2>סיון סיונוב</h2>
+            <p>
+              עם רקע עשיר בבנקאות פרטית ונדל״ן יוקרתי, הקמתי את המשרד מתוך אמונה
+              שלקוחות מגיעים להם שירות ברמה אחרת. אני מלווה לקוחות נבחרים
+              בעסקאות משמעותיות, עם דגש על מקצועיות, דיסקרטיות ותוצאות.
+            </p>
+            <div class="about-highlights">
+              <span class="highlight-chip"
+                ><i class="fas fa-gem"></i> מומחיות בעסקאות יוקרה</span
+              >
+              <span class="highlight-chip"
+                ><i class="fas fa-lock"></i> דיסקרטיות מוחלטת</span
+              >
+              <span class="highlight-chip"
+                ><i class="fas fa-trophy"></i> תוצאות מוכחות</span
+              >
             </div>
-            <div class="about-image">
-                <img src="images/sivan-profile-768.jpg" srcset="images/sivan-profile-512.jpg 512w, images/sivan-profile-768.jpg 768w, images/sivan-profile-1024.jpg 1024w, images/sivan-profile-1536.jpg 1536w, images/sivan-profile.jpg 3840w" sizes="(max-width: 600px) 90vw, (max-width: 1024px) 45vw, 513px" width="513" height="342" alt="סיון סיונוב" onerror="this.src='https://via.placeholder.com/500'">
+            <div class="about-note">
+              <i class="fas fa-quote-right"></i>
+              <p>
+                ״הלקוחות שלי מקבלים גישה ישירה אליי, ללא מתווכים. כל עסקה מטופלת
+                באופן אישי מתחילתה ועד סופה.״
+              </p>
             </div>
+          </div>
+          <div class="about-image">
+            <img
+              src="images/sivan-profile-768.jpg"
+              srcset="
+                images/sivan-profile-512.jpg   512w,
+                images/sivan-profile-768.jpg   768w,
+                images/sivan-profile-1024.jpg 1024w,
+                images/sivan-profile-1536.jpg 1536w,
+                images/sivan-profile.jpg      3840w
+              "
+              sizes="(max-width: 600px) 90vw, (max-width: 1024px) 45vw, 513px"
+              width="513"
+              height="342"
+              alt="סיון סיונוב"
+              onerror="this.src='https://via.placeholder.com/500'"
+            />
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section id="contact" class="section contact-section">
+      <section id="contact" class="section contact-section">
         <div class="contact-grid container">
-            <div class="contact-panel">
-                <span class="eyebrow">שלב הבא</span>
-                <h2>בואו נדבר על הבית הבא שלכם</h2>
-                <p>פגישה קצרה ומדויקת שעוזרת להבין מה אפשר להשיג ואיך עושים את זה בלי כאבי ראש.</p>
-                <div class="contact-chips">
-                    <a class="contact-chip" href="tel:+972524540323">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <strong>שיחת טלפון</strong>
-                            <span>05-2454-0323</span>
-                        </div>
-                    </a>
-                    <a class="contact-chip" href="https://wa.me/972524540323" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-whatsapp"></i>
-                        <div>
-                            <strong>ווטסאפ מהיר</strong>
-                            <span>תשובות מהירות כולל מסמכים</span>
-                        </div>
-                    </a>
-                    <a class="contact-chip" href="mailto:Mortgage.sivan@gmail.com">
-                        <i class="fas fa-envelope-open-text"></i>
-                        <div>
-                            <strong>מייל</strong>
-                            <span>Mortgage.sivan@gmail.com</span>
-                        </div>
-                    </a>
+          <div class="contact-panel">
+            <span class="eyebrow">יצירת קשר</span>
+            <h2>מוכנים להתחיל?</h2>
+            <p>
+              פגישת ההיכרות היא הזדמנות להכיר, להבין את הצרכים שלכם ולבחון אם יש
+              התאמה לעבודה משותפת.
+            </p>
+            <div class="contact-chips">
+              <a class="contact-chip" href="tel:+972524540323">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <strong>טלפון</strong>
+                  <span>052-454-0323</span>
                 </div>
-                <p class="contact-note">עונה בימים א׳-ה׳ בין 09:00-19:00</p>
+              </a>
+              <a
+                class="contact-chip"
+                href="https://wa.me/972524540323"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-whatsapp"></i>
+                <div>
+                  <strong>וואטסאפ</strong>
+                  <span>תגובה מהירה</span>
+                </div>
+              </a>
+              <a class="contact-chip" href="mailto:Mortgage.sivan@gmail.com">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <strong>אימייל</strong>
+                  <span>Mortgage.sivan@gmail.com</span>
+                </div>
+              </a>
             </div>
+            <p class="contact-note">שעות פעילות: א׳-ה׳ 09:00-19:00</p>
+          </div>
 
-            <div class="contact-form-box">
-                <h3>השאירו פרטים ואחזור אליכם</h3>
-                <form name="mortgage-leads" method="POST" data-netlify="true">
-                    <div class="form-group">
-                        <label for="name">שם מלא</label>
-                        <input id="name" type="text" name="name" placeholder="למשל: יעל כהן" required>
-                    </div>
-                    <div class="form-group split">
-                        <div>
-                            <label for="phone">טלפון</label>
-                            <input id="phone" type="tel" name="phone" placeholder="05x-xxxxxxx" required>
-                        </div>
-                        <div>
-                            <label for="email">אימייל</label>
-                            <input id="email" type="email" name="email" placeholder="name@email.com">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">מה חשוב לי לדעת?</label>
-                        <textarea id="message" name="message" rows="3" placeholder="האם זו רכישה, מחזור או בדיקה של תיק קיים?"></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">שלחו לי פרטים</button>
-                </form>
-                <p class="form-disclaimer">טופס זה נשלח בצורה מאובטחת. לא מעבירה את פרטיכם הלאה.</p>
-            </div>
+          <div class="contact-form-box">
+            <h3>השאירו פרטים</h3>
+            <form name="mortgage-leads" method="POST" data-netlify="true">
+              <div class="form-group">
+                <label for="name">שם מלא</label>
+                <input
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="השם שלכם"
+                  required
+                />
+              </div>
+              <div class="form-group split">
+                <div>
+                  <label for="phone">טלפון</label>
+                  <input
+                    id="phone"
+                    type="tel"
+                    name="phone"
+                    placeholder="050-0000000"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="email">אימייל</label>
+                  <input
+                    id="email"
+                    type="email"
+                    name="email"
+                    placeholder="email@example.com"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">במה אוכל לעזור?</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="3"
+                  placeholder="ספרו בקצרה על העסקה או הצורך שלכם"
+                ></textarea>
+              </div>
+              <button type="submit" class="submit-btn">שליחה</button>
+            </form>
+            <p class="form-disclaimer">
+              המידע נשמר בסודיות מלאה ולא יועבר לצד שלישי.
+            </p>
+          </div>
         </div>
-    </section>
-
+      </section>
     </main>
 
     <footer>
-        <p>© 2025 סיון סיונוב - יועצת משכנתאות. כל הזכויות שמורות.</p>
+      <p>© 2025 סיון סיונוב - יועצת משכנתאות. כל הזכויות שמורות.</p>
     </footer>
 
-    <a href="https://wa.me/972524540323" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="פתיחת וואטסאפ">
-        <i class="fab fa-whatsapp"></i>
+    <a
+      href="https://wa.me/972524540323"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="פתיחת וואטסאפ"
+    >
+      <i class="fab fa-whatsapp"></i>
     </a>
 
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="חזרה למעלה">
+      <svg class="progress-ring" viewBox="0 0 50 50">
+        <circle cx="25" cy="25" r="22"></circle>
+      </svg>
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
     <footer class="site-footer">
-        <p>נבנה על ידי <a href="https://gothamsitestudio.com/" target="_blank" rel="noopener noreferrer">Gotham Site Studio</a></p>
+      <p>
+        נבנה על ידי
+        <a
+          href="https://gothamsitestudio.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Gotham Site Studio</a
+        >
+      </p>
     </footer>
 
-    <script>
-        const navToggle = document.querySelector('.nav-toggle');
-        const navLinks = document.querySelector('.nav-links');
-
-        if (navToggle && navLinks) {
-            navToggle.addEventListener('click', () => {
-                navLinks.classList.toggle('open');
-                navToggle.classList.toggle('open');
-                navToggle.setAttribute('aria-expanded', navToggle.classList.contains('open'));
-            });
-
-            navLinks.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    navLinks.classList.remove('open');
-                    navToggle.classList.remove('open');
-                    navToggle.setAttribute('aria-expanded', 'false');
-                });
-            });
-        }
-    </script>
-
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
